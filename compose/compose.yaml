@@ -1,0 +1,6 @@
+name: neuro-courses
+
+services: {}
+
+networks:
+  net: {}

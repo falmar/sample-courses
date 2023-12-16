@@ -1,0 +1,6 @@
+name: neuro-courses
+
+include:
+  - path:
+      - ../compose.yaml
+      - ./override.yaml
