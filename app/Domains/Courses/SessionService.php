@@ -39,15 +39,22 @@ readonly class SessionService implements SessionServiceInterface
             );
         }
 
-        // get categories
         if ($input->withCategories) {
-            // extract category ids from sessions
-            $categoryIds = array_map(
-                fn (Session $session) => $session->categoryId,
-                array_slice($sessions, 0, 3),
+            // get last 3 category ids
+            $categoryIds = array_slice(
+                // remove duplicates
+                array_unique(
+                    // extract category ids
+                    array_map(
+                        fn (Session $session) => $session->categoryId,
+                        $sessions,
+                    )
+                ),
+                0,
+                3
             );
 
-            // get category names by ids
+            // make single fetch to get category names by ids
             $categories = array_map(
                 fn (string $item) => $item,
                 $this->categoryRepository->getCategoryNamesByIds($categoryIds)
