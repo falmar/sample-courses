@@ -16,19 +16,16 @@ readonly class CategoryRepositoryPDO implements CategoryRepositoryInterface
         $params = implode(',', array_map(fn ($id) => '?', $ids));
 
         $statement = $this->pdoProvider->getPdo()
-            ->prepare("SELECT id, name from categories WHERE id IN {$params}");
+            ->prepare("SELECT id, name from categories WHERE id IN ({$params})");
 
         $statement->execute($ids);
 
         /** @var array<int, string> $names */
         $names = [];
         while ($row = $statement->fetch()) {
-            /** @var int $id */
-            /** @var string $name */
-            $id = (int)$row['id'];
             $name = (string)$row['name'];
 
-            $names[$id] = $name;
+            $names[] = $name;
         }
 
         return $names;

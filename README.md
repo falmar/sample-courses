@@ -26,7 +26,7 @@
 - Most are interfaces and their implementation so the code is portable and testable.
 
 
-#### Running locally (Docker)
+#### Running locally
 
 ```bash
 $ docker compose -f ./compose/local/compose.yaml up -d --build
@@ -37,6 +37,17 @@ $ composer install
 $ php artisan key:generate
 $ php artisan migrate --seed
 ```
+
+- there is a [postman](./api/postman.json) collection available at `./api/postman.json` to help test the api.
+
+- It assumes a user is already logged in (id: 1) or can be passes as query parameter `user_id=X`; user 1 has 15 records (the service limits it to 12), and user 2 has 5 records,
+- For the optional categories `with_categories=1` query parameter can be passed to the endpoint to include the categories.
+
+#### Running tests
+```bash
+# inside the php container
+php artisan test
+````
 
 #### file structure of the domain
 

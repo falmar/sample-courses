@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "a04b96a5-7b1b-4f33-b704-6bb00eaf78f2",
+		"name": "Sample Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "745781"
+	},
+	"item": [
+		{
+			"name": "Sessions",
+			"item": [
+				{
+					"name": "History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_host}}/api/v1/session-history?with_categories=1&user_id=1",
+							"host": [
+								"{{api_host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"session-history"
+							],
+							"query": [
+								{
+									"key": "with_categories",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "healthz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_host}}/healthz",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"healthz"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_host",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
