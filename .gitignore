@@ -20,3 +20,4 @@ yarn-error.log
 /build
 /storage/cache/.composer
 .php-cs-fixer.cache
+notes.txt

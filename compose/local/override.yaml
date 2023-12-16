@@ -4,7 +4,7 @@ services:
       - net
     image: mysql:8
     ports:
-      - 3386:3306
+      - 3306:3306
     volumes:
       - db:/var/lib/mysql
     environment:
