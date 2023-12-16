@@ -1,7 +1,5 @@
 # Sample Courses
 
-[![deploy](https://github.com/falmar/sample-courses/actions/workflows/deploy.yaml/badge.svg)](https://github.com/falmar/sample-courses/actions/workflows/deploy.yaml)
-
 <div style="text-align: center;">
     <img src="./docs/schema.png" alt="Frozen Shrimp" width="400"/>
 </div>
