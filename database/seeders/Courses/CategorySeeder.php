@@ -16,8 +16,10 @@ class CategorySeeder extends Seeder
             }
 
             Category::create([
-                    'id' => $category['id'],
+                'id' => $category['id'],
                 'name' => $category['name'],
+                'created_at' => $category['created_at'],
+                'updated_at' => $category['updated_at'],
             ]);
         }
     }
@@ -25,24 +27,32 @@ class CategorySeeder extends Seeder
     /**
      * @return array<array<string, mixed>>
      */
-    public function getData(): array
+    public static function getData(): array
     {
         return [
             [
                 'id' => 1,
                 'name' => 'Memory',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 2,
                 'name' => 'Concentration',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 3,
                 'name' => 'Speed',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 4,
                 'name' => 'Logic',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ]
         ];
     }

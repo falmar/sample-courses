@@ -17,7 +17,9 @@ class CourseSeeder extends Seeder
 
             Course::create([
                 'id' => $course['id'],
-                'name' => $course['name']
+                'name' => $course['name'],
+                'created_at' => $course['created_at'],
+                'updated_at' => $course['updated_at'],
             ]);
         }
     }
@@ -25,16 +27,20 @@ class CourseSeeder extends Seeder
     /**
      * @return array<array<string, mixed>>
      */
-    public function getData(): array
+    public static function getData(): array
     {
         return [
             [
                 'id' => 1,
-                'name' => 'Course 1'
+                'name' => 'Course 1',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 2,
-                'name' => 'Course 2'
+                'name' => 'Course 2',
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ]
         ];
     }

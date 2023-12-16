@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
     /**
      * @return array<array<string, mixed>>
      */
-    public function getData(): array
+    public static function getData(): array
     {
         $password = password_hash('p@ssw0rd', PASSWORD_ARGON2ID);
 
@@ -37,12 +37,16 @@ class UserSeeder extends Seeder
                 'name' => 'User 1',
                 'email' => 'user1@example.com',
                 'password' => $password,
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 2,
                 'name' => 'User 2',
                 'email' => 'user2@example.com',
                 'password' => $password,
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ]
         ];
     }

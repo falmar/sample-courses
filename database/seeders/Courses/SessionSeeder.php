@@ -32,7 +32,7 @@ class SessionSeeder extends Seeder
     /**
      * @return array<array<string, mixed>>
      */
-    public function getData(): array
+    public static function getData(): array
     {
         return [
             [
@@ -45,6 +45,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'easy',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609459200,
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
             ],
             [
                 'id' => 2,
@@ -56,6 +58,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'hard',
                 'end_difficulty' => 'easy',
                 'timestamp' => 1609462800,
+                'created_at' => '2021-01-01 01:00:00',
+                'updated_at' => '2021-01-01 01:00:00',
             ],
             [
                 'id' => 3,
@@ -67,6 +71,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'hard',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609466400,
+                'created_at' => '2021-01-01 02:00:00',
+                'updated_at' => '2021-01-01 02:00:00',
             ],
             [
                 'id' => 4,
@@ -78,6 +84,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609470000,
+                'created_at' => '2021-01-01 03:00:00',
+                'updated_at' => '2021-01-01 03:00:00',
             ],
             [
                 'id' => 5,
@@ -89,6 +97,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'easy',
                 'end_difficulty' => 'easy',
                 'timestamp' => 1609473600,
+                'created_at' => '2021-01-01 04:00:00',
+                'updated_at' => '2021-01-01 04:00:00',
             ],
             [
                 'id' => 6,
@@ -100,6 +110,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'easy',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609477200,
+                'created_at' => '2021-01-01 05:00:00',
+                'updated_at' => '2021-01-01 05:00:00',
             ],
             [
                 'id' => 7,
@@ -111,6 +123,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'very_easy',
                 'timestamp' => 1609480800,
+                'created_at' => '2021-01-01 06:00:00',
+                'updated_at' => '2021-01-01 06:00:00',
             ],
             [
                 'id' => 8,
@@ -122,6 +136,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609484400,
+                'created_at' => '2021-01-01 07:00:00',
+                'updated_at' => '2021-01-01 07:00:00',
             ],
             [
                 'id' => 9,
@@ -133,6 +149,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609488000,
+                'created_at' => '2021-01-01 08:00:00',
+                'updated_at' => '2021-01-01 08:00:00',
             ],
             [
                 'id' => 10,
@@ -144,6 +162,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'very_easy',
                 'end_difficulty' => 'hard',
                 'timestamp' => 1609491600,
+                'created_at' => '2021-01-01 09:00:00',
+                'updated_at' => '2021-01-01 09:00:00',
             ],
             [
                 'id' => 11,
@@ -155,6 +175,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'very_easy',
                 'end_difficulty' => 'hard',
                 'timestamp' => 1609495200,
+                'created_at' => '2021-01-01 10:00:00',
+                'updated_at' => '2021-01-01 10:00:00',
             ],
             [
                 'id' => 12,
@@ -166,6 +188,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'medium',
                 'timestamp' => 1609498800,
+                'created_at' => '2021-01-01 11:00:00',
+                'updated_at' => '2021-01-01 11:00:00',
             ],
             [
                 'id' => 13,
@@ -177,6 +201,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'medium',
                 'end_difficulty' => 'very_easy',
                 'timestamp' => 1609502400,
+                'created_at' => '2021-01-01 12:00:00',
+                'updated_at' => '2021-01-01 12:00:00',
             ],
             [
                 'id' => 14,
@@ -188,6 +214,8 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'hard',
                 'end_difficulty' => 'hard',
                 'timestamp' => 1609506000,
+                'created_at' => '2021-01-01 13:00:00',
+                'updated_at' => '2021-01-01 13:00:00',
             ],
             [
                 'id' => 15,
@@ -199,6 +227,73 @@ class SessionSeeder extends Seeder
                 'start_difficulty' => 'hard',
                 'end_difficulty' => 'easy',
                 'timestamp' => 1609509600,
+                'created_at' => '2021-01-01 14:00:00',
+                'updated_at' => '2021-01-01 14:00:00',
+            ],
+            [
+                'id' => 16,
+                'course_id' => 2,
+                'category_id' => 4,
+                'user_id' => 2,
+                'score' => 77,
+                'score_normalized' => 77,
+                'start_difficulty' => 'medium',
+                'end_difficulty' => 'medium',
+                'timestamp' => 1609459200,
+                'created_at' => '2021-01-01 00:00:00',
+                'updated_at' => '2021-01-01 00:00:00',
+            ],
+            [
+                'id' => 17,
+                'course_id' => 1,
+                'category_id' => 2,
+                'user_id' => 2,
+                'score' => 11,
+                'score_normalized' => 11,
+                'start_difficulty' => 'medium',
+                'end_difficulty' => 'medium',
+                'timestamp' => 1609462800,
+                'created_at' => '2021-01-01 01:00:00',
+                'updated_at' => '2021-01-01 01:00:00',
+            ],
+            [
+                'id' => 18,
+                'course_id' => 1,
+                'category_id' => 3,
+                'user_id' => 2,
+                'score' => 47,
+                'score_normalized' => 47,
+                'start_difficulty' => 'hard',
+                'end_difficulty' => 'easy',
+                'timestamp' => 1609466400,
+                'created_at' => '2021-01-01 02:00:00',
+                'updated_at' => '2021-01-01 02:00:00',
+            ],
+            [
+                'id' => 19,
+                'course_id' => 1,
+                'category_id' => 4,
+                'user_id' => 2,
+                'score' => 19,
+                'score_normalized' => 19,
+                'start_difficulty' => 'easy',
+                'end_difficulty' => 'hard',
+                'timestamp' => 1609470000,
+                'created_at' => '2021-01-01 03:00:00',
+                'updated_at' => '2021-01-01 03:00:00',
+            ],
+            [
+                'id' => 20,
+                'course_id' => 1,
+                'category_id' => 1,
+                'user_id' => 2,
+                'score' => 67,
+                'score_normalized' => 67,
+                'start_difficulty' => 'very_easy',
+                'end_difficulty' => 'medium',
+                'timestamp' => 1609473600,
+                'created_at' => '2021-01-01 04:00:00',
+                'updated_at' => '2021-01-01 04:00:00',
             ],
         ];
     }

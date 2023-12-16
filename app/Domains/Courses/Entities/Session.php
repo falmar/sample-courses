@@ -45,8 +45,8 @@ class Session
 
         $self->timestamp = $data['timestamp'];
 
-        $self->createdAt = new \DateTimeImmutable($data['createdAt']);
-        $self->updatedAt = new \DateTimeImmutable($data['updatedAt']);
+        $self->createdAt = new \DateTimeImmutable($data['created_at']);
+        $self->updatedAt = new \DateTimeImmutable($data['updated_at']);
 
         return $self;
     }
